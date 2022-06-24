@@ -7,6 +7,11 @@
     <title>Julio Cabrera Fit</title>
     <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <script src="./assets/js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 <body>
     <header>
@@ -27,7 +32,7 @@
     </header>
         <div id="container">
          <!--presentacion-->
-            <article class="parrafo">
+            <article class="parrafo wow animate__backInDown" data-wow-duration="1s" data-wow-delay=".5s">
             <h1 id="quienSoy">¿Quien soy?</h1>
                 <section>
                     <p class="pQuienSoy">
@@ -37,10 +42,10 @@
                     </p>
                 </section>
             </article>
-            <section class="miFoto">
-                <img class="imgQuienSoy" src="./assets/images/quien-soy.png" alt="">   
+            <section class="miFoto wow animate-animated animate__backInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+                <img class="imgQuienSoy wow animate-animated animate__backInLeft" data-wow-duration="1s" data-wow-delay=".5s" src="./assets/images/quien-soy.png" alt="">   
             </section>
-            <section class="segundaFoto">
+            <section class="segundaFoto wow animate-animated animate__backInRight" data-wow-duration="1s" data-wow-delay=".5s">
                 <img class="imgSegundaFoto" src="./assets/images/segundafoto.png" alt="">
             </section>
             
