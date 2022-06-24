@@ -1,0 +1,534 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Kdam+Thmor+Pro&family=Paytone+One&display=swap');
+
+/* normalize */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* globales */
+html {
+    font-size: 62.5%;
+    background-color :rgba(0, 0, 0, 0.9);
+    font-family: sans-serif;
+}
+
+body {
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+html,body {
+    width: 100%;
+    height: 100vh;
+    overflow-x:hidden;
+}
+
+/* estilos menu de navegacion */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    flex-wrap: wrap;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+.tittle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.menu__item, .menu__link {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    color: #FFFFFF;
+}
+
+.menu__item {
+    padding: 3px;
+}
+
+/* foto quien soy */
+.imgQuienSoy {
+    width: 350px;
+    height: 400px;
+    object-fit: contain;
+    padding-bottom: 30px;
+}
+
+.imgSegundaFoto {
+    width: 350px;
+    height: 400px;
+    padding-bottom: 30px;
+}
+
+.miFoto, .segundaFoto {
+    
+    text-align: center;
+    
+}
+
+/* index */
+h1 {
+    text-align: center;
+}
+ .pQuienSoy {
+     padding: 40px 80px; 
+ }
+
+ #quienSoy {
+    margin-top: 10px;
+ }
+
+/* mis programas */
+
+.programa__img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10rem;
+}
+
+.programa1 , .programa2, .programa3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafoPrograma1,.parrafoPrograma2, .parrafoPrograma3 {
+    text-align: center;
+}
+
+.parrafoPrograma {
+    width: 300px;
+    height: 200px;
+}
+
+.misProgramas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+/* entrena conmigo*/
+
+.entrenaConmigo {
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    display: inline;
+}
+
+.entrenaConmigo__img {
+    width: 200px;
+    height: 200px;
+}
+
+#containerEntrenaConmigo {
+    display: flex;
+    align-items: center;
+}
+
+/* Articulos */
+
+.articulo {
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Paytone One', sans-serif;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+#contenidoArticulo1, #contenidoArticulo2, #contenidoArticulo3 {
+    padding: 10px 40px;
+}
+
+/* preguntas frecuentes */
+
+.pregunta {
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Paytone One', sans-serif;
+}
+
+.pregunta__respuesta {
+    border: 5px solid #808080;
+    margin: 0 30px;
+    margin-bottom: 40px;
+}
+
+.centerPreguntas {
+    display: flex;
+    justify-content: center;
+}
+
+/*icono wpp */
+.iconoWpp {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 7rem;
+}
+
+/* grids index */
+
+#container {
+    display: grid;
+    grid-template-areas: 
+    "parrafo parrafo"
+    "miFoto segundaFoto"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 400px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.parrafo {
+    grid-area: parrafo;
+}
+
+.miFoto {
+    grid-area: miFoto;
+}
+
+.segundaFoto {
+    grid-area: segundaFoto;
+}
+
+/*footer*/
+footer {
+   background-color: #808080;
+   align-items: center;
+   display: flex;
+   justify-content: space-evenly;
+   flex-direction: column;
+}
+
+.pRedes {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.redes {
+    text-align:center;
+    justify-content: space-evenly;
+    
+}
+.linkRed {
+    text-decoration: none;
+    list-style-type: none;
+    color: #FFFFFF;
+   
+}
+
+.listaRedes {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+/*grids misProgramas */
+
+.misProgramas {
+    display: grid;
+    grid-template-areas: 
+    "programa1 programa2 programa3"
+    "parrafoPrograma1 parrafoPrograma2 parrafoPrograma3"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.programa1 {
+    grid-area: programa1;
+}
+
+.programa2 {
+    grid-area: programa2;
+} 
+
+.programa3 {
+    grid-area: programa3;
+} 
+
+.parrafoPrograma1 {
+    grid-area: parrafoPrograma1;
+}
+
+.parrafoPrograma2 {
+    grid-area: parrafoPrograma2;
+}
+
+.parrafoPrograma3 {
+    grid-area: parrafoPrograma3;
+}
+
+/*grids entrenaConmigo*/
+
+#containerEntrenaConmigo {
+    display: grid;
+    grid-template-areas: 
+    "suscripcion1 foto1"
+    "suscripcion2 foto2"
+    "suscripcion3 foto3"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+
+#suscripcion1 {
+    grid-area: suscripcion1;
+}
+
+#suscripcion2 {
+    grid-area: suscripcion2;
+}
+
+#suscripcion3 {
+    grid-area: suscripcion3;
+}
+
+#fotoSuscripcion1 {
+    grid-area: foto1;
+}
+
+#fotoSuscripcion2 {
+    grid-area: foto2;
+}
+
+#fotoSuscripcion3 {
+    grid-area: foto3;
+}
+
+/*grid articulos*/
+
+#containerArticulos {
+    display: grid;
+    grid-template-areas: 
+    "articulo1 articulo2 articulo3"
+    "contenidoArticulo1 contenidoArticulo2 contenidoArticulo3"
+    ;
+    grid-template-columns: 1fr 1 fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+#articulo1 {
+    grid-area: articulo1
+}
+
+#articulo2 {
+    grid-area: articulo2
+}
+
+#articulo3 {
+    grid-area: articulo3
+}
+
+#contenidoArticulo1 {
+    grid-area: contenidoArticulo1
+}
+
+#contenidoArticulo2 {
+    grid-area: contenidoArticulo2
+}
+
+#contenidoArticulo3 {
+    grid-area: contenidoArticulo3
+}
+
+/*media queries*/
+
+/*index responsive*/
+
+@media  screen and (max-width: 480px) {
+#container {
+    
+    grid-template-areas: 
+    "parrafo"
+    "miFoto"
+    "segundaFoto"
+    ;
+    grid-template-rows: auto 500px 500px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+header {
+    width: 100vw;
+}
+
+footer {
+    width: 100%;
+}
+
+#container {
+    width: 100%;
+}
+
+.imgQuienSoy {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.imgSegundaFoto {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.miFoto, .segundaFoto {
+    height: 100px;
+}
+
+}
+
+/*misProgramas responsive*/
+
+@media screen and (max-width:480px) {
+    .misProgramas {
+        grid-template-areas: 
+        "programa1" 
+        "parrafoPrograma1"
+        "programa2" 
+        "parrafoPrograma2"
+        "programa3" 
+        "parrafoPrograma3"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .programa1 {
+        grid-area: programa1;
+    }
+    
+    .programa2 {
+        grid-area: programa2;
+    }
+    
+    .programa3 {
+        grid-area: programa3;
+    }
+    
+    .parrafoPrograma1 {
+        grid-area: parrafoPrograma1;
+    }
+    
+    .parrafoPrograma2 {
+        grid-area: parrafoPrograma2;
+    }
+    
+    .parrafoPrograma3 {
+        grid-area: parrafoPrograma3;
+    }
+    
+}
+
+.programa__img {
+    margin: 0;
+}
+
+/*entrenaConmigo responsive*/
+
+@media screen and (max-width: 480px) {
+    #containerEntrenaConmigo {
+        grid-template-areas: 
+        "suscripcion1"
+        "foto1"
+        "suscripcion2"
+        "foto2"
+        "suscripcion3"
+        "foto3"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 20px;
+    }
+    #suscripcion1 {
+        grid-area: suscripcion1;
+    }
+    
+    #suscripcion2 {
+        grid-area: suscripcion2;
+    }
+    
+    #suscripcion3 {
+        grid-area: suscripcion3;
+    }
+    
+    #fotoSuscripcion1 {
+        grid-area: foto1;
+    }
+    
+    #fotoSuscripcion2 {
+        grid-area: foto2;
+    }
+    
+    #fotoSuscripcion3 {
+        grid-area: foto3;
+    }
+}
+
+/*articulos responsive*/
+
+@media screen and (max-width: 480px) {
+    #containerArticulos {
+        display: grid;
+        grid-template-areas: 
+        "articulo1"
+        "contenidoArticulo1"
+        "articulo2"
+        "contenidoArticulo2"
+        "articulo3"
+        "contenidoArticulo3"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    #articulo1 {
+        grid-area: articulo1
+    }
+    
+    #articulo2 {
+        grid-area: articulo2
+    }
+    
+    #articulo3 {
+        grid-area: articulo3
+    }
+    
+    #contenidoArticulo1 {
+        grid-area: contenidoArticulo1
+    }
+    
+    #contenidoArticulo2 {
+        grid-area: contenidoArticulo2
+    }
+    
+    #contenidoArticulo3 {
+        grid-area: contenidoArticulo3
+    }
+}
